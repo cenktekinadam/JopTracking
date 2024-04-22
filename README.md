@@ -20,6 +20,10 @@
 - **UUID:** Benzersiz tanımlayıcılar oluşturmak için kullanılır. Özellikle veritabanında her bir öğenin benzersiz bir kimliğe sahip olması gerektiğinde kullanılır.
 
 - **React Icons:** Projede kullanılacak ikonları temsil etmek için kullanılır. Kolayca erişilebilir ve çeşitli ikon kütüphanelerini destekler.
+- 
+- **SCSS (SASS), CSS (Cascading Style Sheets) için bir üst küme olan bir CSS ön işlemci dilidir. SCSS, CSS'e ek özellikler eklerken, daha temiz ve daha organize CSS kodları yazmayı sağlar. Bu sayede, daha büyük ölçekli projelerde kod yönetimini kolaylaştırır ve tekrar kullanılabilirlik sağlar.
+
+
 
 ## Kullanılan Algoritmalar:
 
