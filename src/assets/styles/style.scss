@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import 'extra';
+@import 'addpage';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #242424;
+    color: white;
+    height: 100vh;
+    font-family: 'poppins';
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+
+
+    nav {
+        display: flex;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: rgb(226, 68, 160);
+            font-size: 19px;
+        }
+
+        .active {
+            text-shadow: 0 0 20px pink;
+        }
+    }
+
+}
+
+.list-page {
+
+    min-height: calc(100vh - 100px);
+    max-width: 100%;
+
+}
+
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+
+    max-width: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width:480px) {
+    .cards-wrapper {
+        display: grid;
+        grid-template-columns: subgrid;
+        gap: 30px;
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+.card {
+    background-color: #71797e;
+    padding: 20px;
+    border-radius: 20px;
+
+
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 40px;
+        margin-bottom: 20px;
+
+        .letter {
+            background-color: purple;
+            width: 60px;
+            height: 60px;
+            display: grid;
+            place-items: center;
+            border-radius: 10px;
+            font-size: 30px;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px white;
+            font-family: 'poppins';
+        }
+
+        .info {
+            font-size: 19px;
+
+            p:nth-of-type(2) {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 10px;
+
+        .field {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .status {
+            display: flex;
+
+            p {
+                padding: 6px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
